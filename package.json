@@ -1,0 +1,15 @@
+{
+  "name": "gleason",
+  "version": "0.0.1",
+  "description": "John Gleason Plumbing Site",
+  "main": "app.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote -v"
+  },
+  "author": "Magee Mooney",
+  "license": "BSD-2-Clause"
+}
