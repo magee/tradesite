@@ -22,3 +22,11 @@ footer {
   color: #fffacd;
   background-color: transparent;
 }
+.icon {
+  height:68px;
+  width:68px;
+  background-image:url('img/social-flat-icons.png'); /*your location of the image may differ*/
+}
+.linkedin {background-position:0px 0px;}
+.googleplus {background-position:-68px 0px;}
+.facebook {background-position:-136px 0px;}
