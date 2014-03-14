@@ -13,23 +13,17 @@ footer {
 .red {
   color: red;
 }
-.home-banner p {
-  font-size: 1.5em;
-  margin: 1.5em 0;
-}
-.home-images {
-  float: left;
-}
-.home-images .logo {
-  float: left;
-}
-.home-images .main-image {
-  float: left;
-}
 .logo {
   z-index: 100;
   float: left;
 }
 .navbar {
   background-color: #2F4F4F;
+}
+.home-banner p {
+  font-size: 1em;
+  margin: 1em 0;
+}
+.home-banner a.btn {
+  margin-top: 1.25em;
 }
