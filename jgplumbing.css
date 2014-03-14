@@ -1,0 +1,35 @@
+/* CSS declarations go here */
+body {
+  margin-top: 125px; /* adjust this if the height of the menu bar changes */
+}
+
+.nav {
+  margin-top: 28px; /* this is a faux center fix for the nav options - adjust this if you wish to change the logo height or the font of the menu items */
+}
+
+footer {
+  padding: 30px 0;
+}
+.red {
+  color: red;
+}
+.home-banner p {
+  font-size: 1.5em;
+  margin: 1.5em 0;
+}
+.home-images {
+  float: left;
+}
+.home-images .logo {
+  float: left;
+}
+.home-images .main-image {
+  float: left;
+}
+.logo {
+  z-index: 100;
+  float: left;
+}
+.navbar {
+  background-color: #2F4F4F;
+}

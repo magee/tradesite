@@ -1,0 +1,118 @@
+<head>
+    <meta charset="utf-8">
+    <meta keywords="plumbing, marin county">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="John Gleason Plumbing">
+    <meta name="author" content="Geewicket Labs">
+  <title>John Gleason Plumbing</title>
+</head>
+
+<body>
+  {{> original}}
+</body>
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{greeting}}
+  <input type="button" value="Click" />
+</template>
+
+
+<template name="original">
+
+    <title>John Gleason Plumbing</title>
+
+    <!-- Bootstrap core CSS -->
+   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+                <a class="navbar-brand logo-nav" href="index.html">
+                    <h1>John Gleason Plumbing</h1>
+                    <!-- <img src="http://placehold.it/150x75&text=Logo"> -->
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a>
+                    </li>
+                    <li><a href="#services">Services</a>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8 home-images">
+                <div class="main-image"><img class="img-responsive img-rounded" src="img/plumbing-slider-main.png"></div>
+                <!-- take out img-rounded if you don't want the rounded corners on the image
+                <img class="img-responsive img-rounded" src="http://placehold.it/900x350">
+
+            -->
+            </div>
+            <div class="col-md-4 home-banner">
+                <h3>Serving Marin & Sonoma</h3>
+                <p>Call us today for your plumbing needs! <span class="red">415.898.2867</span></p>
+                <a class="btn btn-primary btn-md" href="#">Request Service</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well text-center">
+                    24 Hour Emergency Service. &nbsp; &nbsp; &nbsp; &nbsp; Check out our reviews on <a href="http://www.yelp.com/biz/johns-plumbing-and-sewer-service-novato-2">Yelp</a>!
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Remodel Plumbing</h2>
+                <p>For most homeowners, remodeling starts out as a fun project, involving design choices and themed décor. With plumbing remodeling, you get to pick out new fixtures for your kitchen and/or bathroom that flow with your new countertops, cabinets, lighting, and other design choices. However, when the parts start to arrive and it’s time for installation, things can quickly go south without the proper professional plumbing company to assist.</p>
+                <a class="btn btn-default" href="#">More Info</a>
+            </div>
+            <div class="col-md-4">
+                <h2>Residential Plumbing</h2>
+                <p>Get trusted expert residential plumbing & boiler installation & repair at your convenience with John’s Plumbing  24-hour emergency service support.</p>
+                <a class="btn btn-default" href="#">More Info</a>
+            </div>
+            <div class="col-md-4">
+                <h2>Commercial Plumbing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin auctor quam ac tempor. Cras a ante sed libero mollis sodales. Praesent fringilla, neque ut ultrices faucibus, dolor eros ultrices neque, nec bibendum arcu ipsum eget justo.</p>
+                <a class="btn btn-default" href="#">More Info</a>
+            </div>
+        </div>
+
+        <footer>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright &copy; John Gleason Plumbing, 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+</template>
