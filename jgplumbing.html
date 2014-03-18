@@ -1,4 +1,6 @@
 <template name="layout">
+    <title>John Gleason Plumbing</title>
+
     {{yield 'navbar'}}
     <div class="container">
         {{yield}}
@@ -15,6 +17,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
 </template>
 
 <template name="loading">
@@ -59,8 +65,6 @@
 </template>
 
 <template name="navbar">
-    <title>John Gleason Plumbing</title>
-
     <!-- Bootstrap core CSS -->
    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
