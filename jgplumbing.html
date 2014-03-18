@@ -1,5 +1,5 @@
 <template name="layout">
-    {{yield 'header'}}
+    {{yield 'navbar'}}
 
     {{yield}}
 </template>
@@ -45,6 +45,43 @@
     </div>
 </template>
 
+<template name="navbar">
+    <title>John Gleason Plumbing</title>
+
+    <!-- Bootstrap core CSS -->
+   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+                <a class="navbar-brand logo-nav" href="index.html">
+                    <h1>John Gleason Plumbing</h1>
+                    <!-- <img src="http://placehold.it/150x75&text=Logo"> -->
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a>
+                    </li>
+                    <li><a href="#services">Services</a>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+</template>
+
 <template name="services">
     <div class="row">
         <div class="col-md-12">
@@ -54,50 +91,52 @@
 </template>
 
 <template name="home">
-    <div class="row">
-        <div class="col-md-8 home-images">
-            <div class="main-image"><img class="img-responsive img-rounded" src="img/plumbing-slider-main.png"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 home-images">
+                <div class="main-image"><img class="img-responsive img-rounded" src="img/plumbing-slider-main.png"></div>
+            </div>
+            <div class="col-md-4 home-banner">
+                <h3>Serving Marin & Sonoma</h3>
+                <p><span class="red">24 Hour Emergency Service.</span></p>
+                <p>Call us today for your plumbing needs!</p>
+                <a class="btn btn-primary btn-md" href="#">Request Service</a>
+            </div>
         </div>
-        <div class="col-md-4 home-banner">
-            <h3>Serving Marin & Sonoma</h3>
-            <p><span class="red">24 Hour Emergency Service.</span></p>
-            <p>Call us today for your plumbing needs!</p>
-            <a class="btn btn-primary btn-md" href="#">Request Service</a>
-        </div>
-    </div>
 
-    <hr>
+        <hr>
 
-    <div class="row">
-        <div class="col-md-12">
-            <div class="well text-center">
-                <span class="bold">Novato</span>: <span class="red">415-898-2867</span> &nbsp; <span class="bold">South Marin</span>: <span class="red">415-388-2800</span>  &nbsp; <span class="bold">Sonoma</span>: <span class="red">707-765-3350</span> &nbsp; &nbsp; Check out our reviews on <a href="http://www.yelp.com/biz/johns-plumbing-and-sewer-service-novato-2">Yelp</a>!
-                <div class="icon linkedin">
-                </div>
-                <div class="icon googleplus">
-                </div>
-                <div class="icon facebook">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well text-center">
+                    <span class="bold">Novato</span>: <span class="red">415-898-2867</span> &nbsp; <span class="bold">South Marin</span>: <span class="red">415-388-2800</span>  &nbsp; <span class="bold">Sonoma</span>: <span class="red">707-765-3350</span> &nbsp; &nbsp; Check out our reviews on <a href="http://www.yelp.com/biz/johns-plumbing-and-sewer-service-novato-2">Yelp</a>!
+                    <div class="icon linkedin">
+                    </div>
+                    <div class="icon googleplus">
+                    </div>
+                    <div class="icon facebook">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-md-4">
-            <h3>Remodel Plumbing</h3>
-            <p>For most homeowners, remodeling starts out as a fun project, involving design choices and themed décor. With plumbing remodeling, you get to pick out new fixtures for your kitchen and/or bathroom that flow with your new countertops, cabinets, lighting, and other design choices. However, when the parts start to arrive and it’s time for installation, things can quickly go south without the proper professional plumbing company to assist.</p>
-            <a class="btn btn-default" href="#">More Info</a>
-        </div>
-        <div class="col-md-4">
-            <h3>Residential Plumbing</h3>
-            <p>Get trusted expert residential plumbing & boiler installation & repair at your convenience with John’s Plumbing  24-hour emergency service support.</p>
-            <a class="btn btn-default" href="#">More Info</a>
-        </div>
-        <div class="col-md-4">
-            <h3>Commercial Plumbing</h3>
-            <p>Every sewer and drain problem is unique. At John Gleason Plumbing we are highly regarded for our expertise in promptly identifying and solving each problem without burdening our customers with unnecessary repairs.</p>
-            <p>We employ professional, experienced and conscientious technicians and efficient, knowledgeable office personnel. Our equipment is state-of-the-art.</p>
-            <a class="btn btn-default" href="#">More Info</a>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Remodel Plumbing</h3>
+                <p>For most homeowners, remodeling starts out as a fun project, involving design choices and themed décor. With plumbing remodeling, you get to pick out new fixtures for your kitchen and/or bathroom that flow with your new countertops, cabinets, lighting, and other design choices. However, when the parts start to arrive and it’s time for installation, things can quickly go south without the proper professional plumbing company to assist.</p>
+                <a class="btn btn-default" href="#">More Info</a>
+            </div>
+            <div class="col-md-4">
+                <h3>Residential Plumbing</h3>
+                <p>Get trusted expert residential plumbing & boiler installation & repair at your convenience with John’s Plumbing  24-hour emergency service support.</p>
+                <a class="btn btn-default" href="#">More Info</a>
+            </div>
+            <div class="col-md-4">
+                <h3>Commercial Plumbing</h3>
+                <p>Every sewer and drain problem is unique. At John Gleason Plumbing we are highly regarded for our expertise in promptly identifying and solving each problem without burdening our customers with unnecessary repairs.</p>
+                <p>We employ professional, experienced and conscientious technicians and efficient, knowledgeable office personnel. Our equipment is state-of-the-art.</p>
+                <a class="btn btn-default" href="#">More Info</a>
+            </div>
         </div>
     </div>
 </template>
