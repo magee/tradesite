@@ -1,5 +1,7 @@
 {
   "packages": {
-    "bootstrap-flatly": {}
+    "bootstrap-flatly": {},
+    "iron-router": {},
+    "phantomjs": {}
   }
 }

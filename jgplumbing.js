@@ -1,15 +1,4 @@
 if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to jgplumbing.";
-  };
-
-  Template.hello.events({
-    'click input': function () {
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("You pressed the button");
-    }
-  });
 }
 
 if (Meteor.isServer) {
@@ -17,3 +6,33 @@ if (Meteor.isServer) {
     // code to run on server at startup
   });
 }
+
+Router.configure({
+  layoutTemplate: 'layout'
+  // layoutTemplate: 'layout',
+  // notFoundTemplate: 'notFound',
+  // loadingTemplate: 'loading'
+});
+
+Router.map(function () {
+  this.route('home', {
+    path: '/',
+    template: 'home'
+  });
+
+  this.route('about', {
+    path: '/about'
+  });
+
+  this.route('services', {
+    path: '/services'
+  });
+
+  this.route('contact', {
+    path: '/contact'
+  });
+
+  this.route('notFound', {
+    path: '*'
+  });
+});

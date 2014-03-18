@@ -12,10 +12,6 @@ footer {
 .red {
   color: red;
 }
-.home-banner p {
-  font-size: 1em;
-  margin: 1em 0;
-}
 .home-banner > h1 {
   font-size: 1em;
   margin-top: 0px;
@@ -30,3 +26,6 @@ footer {
 .linkedin {background-position:0px 0px;}
 .googleplus {background-position:-68px 0px;}
 .facebook {background-position:-136px 0px;}
+.bold {
+  font-weight: bold;
+}

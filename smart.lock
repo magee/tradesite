@@ -2,13 +2,25 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "bootstrap-flatly": {}
+      "bootstrap-flatly": {},
+      "iron-router": {},
+      "phantomjs": {}
     },
     "packages": {
       "bootstrap-flatly": {
         "git": "https://github.com/grokbot/meteor-bootstrap-flatly.git",
         "tag": "v0.0.3",
         "commit": "ca8eb1730f1090b8d6e0db75efbe566a2ff27ee7"
+      },
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.4",
+        "commit": "927bbaed1b87894fb6fb70807f74ff3a5bd89f29"
+      },
+      "phantomjs": {
+        "git": "https://github.com/gadicohen/meteor-phantomjs.git",
+        "tag": "v0.0.2",
+        "commit": "a72eb79af068dd5d5d617ac71a42bd74e0cb52a4"
       }
     }
   }
