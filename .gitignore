@@ -1,3 +1,4 @@
+jg_logo.jpg
 lib-cov
 *.seed
 *.log
@@ -20,4 +21,3 @@ node_modules
 *.iml
 .DS_Store
 Thumbs.db
-
