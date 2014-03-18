@@ -26,7 +26,9 @@ Router.map(function () {
   });
 
   this.route('about', {
-    path: '/about'
+    path: '/about',
+    template: 'pageLayout',
+    pageTitle: "About Us"
   });
 
   this.route('services', {
