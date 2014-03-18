@@ -1,7 +1,20 @@
 <template name="layout">
     {{yield 'navbar'}}
+    <div class="container">
+        {{yield}}
+    </div>
+    {{yield 'footer'}}
+</template>
 
-    {{yield}}
+<template name="footer">
+    <footer>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Copyright &copy; John Gleason Plumbing, 2014</p>
+            </div>
+        </div>
+    </footer>
 </template>
 
 <template name="loading">
@@ -91,7 +104,6 @@
 </template>
 
 <template name="home">
-    <div class="container">
         <div class="row">
             <div class="col-md-8 home-images">
                 <div class="main-image"><img class="img-responsive img-rounded" src="img/plumbing-slider-main.png"></div>
@@ -137,6 +149,5 @@
                 <p>We employ professional, experienced and conscientious technicians and efficient, knowledgeable office personnel. Our equipment is state-of-the-art.</p>
                 <a class="btn btn-default" href="#">More Info</a>
             </div>
-        </div>
     </div>
 </template>
