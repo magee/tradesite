@@ -8,7 +8,12 @@ if (Meteor.isServer) {
 }
 
 Router.configure({
-  layoutTemplate: 'layout'
+  layoutTemplate: 'layout',
+  yieldTemplates: {
+    'footer': {to: 'footer'},
+    'navbar': {to: 'navbar'}
+  }
+
   // layoutTemplate: 'layout',
   // notFoundTemplate: 'notFound',
   // loadingTemplate: 'loading'
