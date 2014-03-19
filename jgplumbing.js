@@ -6,7 +6,7 @@ if (Meteor.isServer) {
     // code to run on server at startup
   });
 
-  var fs = Meteor.require('fs');
+  var fs = Npm.require('fs');
 
   Router.map(function() {
     return this.route('dataFile', {
