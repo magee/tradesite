@@ -35,13 +35,19 @@
   <br />
   <div class="row">
     <div class="col-md-12">
-    {{>support}}
+    {{>altSupport}}
     </div>
   </div>
 
 </template>
 
-<template name="contactForm">
+<template name="altSupport">
+  <script type="text/javascript" src="http://assets.freshdesk.com/widget/freshwidget.js"></script>
+  <style type="text/css" media="screen, projection">
+    @import url(http://assets.freshdesk.com/widget/freshwidget.css);
+  </style>
+  <iframe class="freshwidget-embedded-form" id="freshwidget-embedded-form" src="http://jgp.freshdesk.com/widgets/feedback_widget/new?&widgetType=embedded&formTitle=Request+Service+or+Report+a+Problem&screenshot=no&searchArea=no" scrolling="no" height="600px" width="100%" frameborder="0" >
+  </iframe>
 </template>
 
 <template name="support">
