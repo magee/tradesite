@@ -17,15 +17,21 @@
 
 <template name="layout">
     {{yield 'navbar'}}
+    {{> pageTitle}}
+    <div class="container">
+        {{yield 'content'}}
+        {{yield 'footer'}}
+    </div>
+</template>
+
+<template name="pageTitle">
+    {{#if pageTitle}}
     <div class="row">
         <div class="col-md-12">
             <h2>{{pageTitle}}</h2>
         </div>
     </div>
-    <div class="container">
-        {{yield 'content'}}
-        {{yield 'footer'}}
-    </div>
+    {{/if}}
 </template>
 
 <template name="footer">
