@@ -22,23 +22,21 @@
           Website : http://jgpservice.com<br />
         </div>
     </div>
+
     <div class="row">
       <div class="col-md-12">
           <div class="well text-center">
-            <div class="icon linkedin">linkedin
-            </div>
-            <div class="icon googleplus">g+
-            </div>
-            <div class="icon facebook">fb
-            </div>
+            <span class="icon linkedin">linkedin
+            </span>
+            <span class="icon googleplus">g+
+            </span>
+            <span class="icon facebook">fb
+            </span>
           </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
-        {{>contactForm}}
-      </div>
-      <div class="col-md-6">
+      <div class="col-md-12">
         {{>support}}
       </div>
     </div>
@@ -46,131 +44,7 @@
 </template>
 
 <template name="contactForm">
-<div class="" id="feedback-widget-container">
-
-
-   <link href="http://static3.freshdesk.com/production/packages/3fd3683/gz/responsive_widget.css" media="screen" rel="stylesheet" type="text/css">
-
-<div class="modal-header">
-  <div class="modal-header-bg">
-  <h3 class="ellipsis" title="Request Service or Report a Problem">Request Service or Report a Problem</h3>
-  </div>
-</div>
-<input type="hidden" name="widgetType" id="widgetType" value="embedded">
-<input id="searchInputFrom" name="searchInputFrom" type="hidden">
-<div class="modal-body embedded-body">
-<form action="/widgets/feedback_widget?formTitle=Send+us+a+message&amp;submit_message=Thank+you+for+contacting+John+Gleason+Plumbing+%26+Sewage.++We+will+get+back+to+you+as+soon+as+possible.++If+you+want+the+fastest+possible+response%2C+call+us+directly+at+415-898-2867.&amp;widgetType=embedded" class="form form-widget" enctype="multipart/form-data" id="fd_feedback_widget" method="post">
-      <div class="form-placeholder">
-            <div class="control-group default_requester">
-               <label class=" required control-label requester-label" for="helpdesk_ticket_email">Requester</label>
-            <div class="controls">
-              <div class="row-fluid">
-                <input class="span12 email required" data-check-email-path="/support/tickets/check_email" data-remote-triggers="focusout" data-remote="true" id="helpdesk_ticket_email" name="helpdesk_ticket[email]" placeholder="" size="30" type="text">
-
-                <div id="name_field" class="default_name_field hide">
-                  <input class="text span12 name_field" placeholder="Your Name" name="helpdesk_ticket[name]" type="text" disabled="disabled">
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="control-group default_subject">
-               <label class=" required control-label subject-label" for="helpdesk_ticket_subject">Subject</label>
-            <div class="controls">
-
-              <input class=" required text span12" id="helpdesk_ticket_subject" name="helpdesk_ticket[subject]" size="30" type="text" placeholder="">
-            </div>
-            </div>
-            <div class="control-group default_description">
-               <label class=" required control-label description-label" for="helpdesk_ticket_ticket_body_attributes_description_html">Description</label>
-            <div class="controls">
-               <div class="redactor_box"><ul class="redactor_toolbar"><li><a href="javascript:void(null);" title="Bold (⌘B)" class="redactor_btn_bold" tabindex="-1"></a></li><li><a href="javascript:void(null);" title="Italic (⌘I)" class="redactor_btn_italic" tabindex="-1"></a></li><li><a href="javascript:void(null);" title="Underline (⌘U)" class="redactor_btn_underline" tabindex="-1"></a></li><li class="redactor_separator"></li><li><a href="javascript:void(null);" title="• Unordered List (⌘⇧7)" class="redactor_btn_unorderedlist" tabindex="-1"></a></li><li><a href="javascript:void(null);" title="1. Ordered List (⌘⇧8)" class="redactor_btn_orderedlist" tabindex="-1"></a></li><li class="redactor_separator"></li><li><a href="javascript:void(null);" title="Font Color" class="redactor_btn_fontcolor" tabindex="-1"></a></li><li><a href="javascript:void(null);" title="Back Color" class="redactor_btn_backcolor" tabindex="-1"></a></li><li class="redactor_separator"></li><li><a href="javascript:void(null);" title="Link" class="redactor_btn_link" tabindex="-1"></a></li></ul><div class="redactor_editor" contenteditable="true" dir="ltr" style="height: 126px;"><p><br></p></div><textarea class="element_class span12 required_redactor" cols="40" id="helpdesk_ticket_ticket_body_attributes_description_html" name="helpdesk_ticket[ticket_body_attributes][description_html]" rows="6" placeholder="" style="display: none;"></textarea></div>
-              <div class="attach-wrapper row-fluid">
-                <div class="span8">
-                      <div class="attach-link portal-attach">
-                        <i class="wicon-paper-clip"></i>
-                        <span class="attach-proxy"> <a data-file-id="ticket_file" href="#" id="ticket_proxy_link" onclick="Helpdesk.Multifile.clickProxy(this); return false;">Attach a <b>file</b></a></span>
-                        <div class="attach-file hide" id="ticket-attach-container">
-                          <input type="file" name="emptyfile" id="ticket_file" data-attach-id="ticket" namewhenfilled="helpdesk_ticket[attachments][][resource]" filecontainer="ticket-container" filelist="ticket-attachments" sendfocusto="ticket-body" class="original_input">
-                        </div>
-                      </div>
-                    <div class="attachments-list-form" id="ticket-container">
-                      <div id="ticket-attachments"></div>
-                    </div>
-                </div>
-
-                  <script id="file-list-template" type="text/x-jquery-tmpl">
-                    <div class="item">
-                      <a href="#" class="close attach-close"
-                        onclick="Helpdesk.Multifile.remove(this);return false;" inputId="${inputId}">&times;</a>
-                      <div class="ellipsis">${name}</div>
-                    </div>
-                  </script>
-
-              </div>
-                          </div>
-                          </div>
-                      <input id="helpdesk_ticket_source" name="helpdesk_ticket[source]" type="hidden" value="9">
-                    </div>
-                  <div class="form-portal">
-                    <div class="extra-space"></div>
-                </div>
-                  <div class="extra-space"></div>
-              </form></div>
-              <div class="modal-footer embedded-footer">
-                <div class="row-fluid">
-                  <div class="span10">
-                    <div class="copyright">
-                        <a href="http://www.freshdesk.com" target="_blank">Help Desk Software</a>
-                        by Freshdesk
-                        <div class="fw-privacy-policy">
-                          <a href="http://www.freshdesk.com/privacy" target="_blank">Privacy Policy</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="span2 omega">
-                    <input class="btn btn-primary omega" data-loading-text="Submitting.." id="helpdesk_ticket_submit" name="commit" type="submit" value="Submit">
-                    <input id="meta_user_agent" name="meta[user_agent]" type="hidden" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36">
-                    <input id="meta_referrer" name="meta[referrer]" type="hidden" value="http://johngleasonplumbing.com/contact/?_escaped_fragment_=">
-                  </div>
-                </div>
-              </div>
-
-              <iframe id="freshwidget-submit-frame" name="freshwidget-submit-frame" src="about:blank" frameborder="0" scrolling="auto" allowtransparency="true" style="position:absolute; visibility:hidden; width:0px; height:0px;">
-              </iframe>
-
-
-              <script type="text/javascript">
-              //<![CDATA[
-                jQuery('.modal-body').scroll(function() {
-                  if(this.scrollTop > 8){
-                    jQuery(this).parent().addClass("modal-scroll");
-                  }else{
-                    jQuery(this).parent().removeClass("modal-scroll");
-                  }
-                });
-
-                jQuery(document).ready(function () {
-                  if(false == true){
-                    if(jQuery("#helpdesk_ticket_email").val() != ""){
-                      jQuery("#helpdesk_ticket_email").prop("disabled","true");
-                    }
-                  }
-                  var embeddedWidget = jQuery("#widgetType").val();
-                  if(embeddedWidget == "embedded") {
-                    jQuery("#feedback-widget-container").removeClass("modal modal-widget");
-                    jQuery(".feedback-wrapper").addClass("embedded-wrapper");
-                    jQuery(".modal-body").addClass("embedded-body");
-                    jQuery(".modal-panel").addClass("embedded-panel");
-                    jQuery(".modal-footer").addClass("embedded-footer");
-                    jQuery(".hc-search-input").addClass("embedded-search-input");
-                  }
-
-                });
-
-              //]]>
-              </script>
-        </div>
-      </template>
+</template>
 
 <template name="support">
     <script type="text/javascript" src="http://assets.freshdesk.com/widget/freshwidget.js"></script>
