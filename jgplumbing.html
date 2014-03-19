@@ -18,13 +18,13 @@
 <template name="layout">
   {{yield 'navbar'}}
   <div class="container">
-    {{> pageTitle}}
+    {{> title}}
     {{yield 'content'}}
     {{yield 'footer'}}
   </div>
 </template>
 
-<template name="pageTitle">
+<template name="title">
   <div class="row">
     <div class="col-md-12">
       <h3>{{pageTitle}}</h3>
