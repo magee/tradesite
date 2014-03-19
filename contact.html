@@ -22,8 +22,27 @@
           Website : http://jgpservice.com<br />
         </div>
     </div>
-    {{>contactForm}}
-    {{>support}}
+    <div class="row">
+      <div class="col-md-12">
+          <div class="well text-center">
+            <div class="icon linkedin">linkedin
+            </div>
+            <div class="icon googleplus">g+
+            </div>
+            <div class="icon facebook">fb
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        {{>contactForm}}
+      </div>
+      <div class="col-md-6">
+        {{>support}}
+      </div>
+    </div>
+
 </template>
 
 <template name="contactForm">
