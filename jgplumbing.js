@@ -28,15 +28,28 @@ Router.map(function () {
   this.route('about', {
     path: '/about',
     template: 'pageLayout',
-    pageTitle: "About Us"
+    pageTitle: "About Us",
+    yieldTemplates: {
+      'aboutContent': {to: 'pageContent'}
+    }
   });
 
   this.route('services', {
-    path: '/services'
+    path: '/services',
+    template: 'pageLayout',
+    pageTitle: "Our Services",
+    yieldTemplates: {
+      'servicesContent': {to: 'pageContent'}
+    }
   });
 
   this.route('contact', {
-    path: '/contact'
+    path: '/contact',
+    template: 'pageLayout',
+    pageTitle: "Contact Us",
+    yieldTemplates: {
+      'contactContent': {to: 'pageContent'}
+    }
   });
 
   this.route('notFound', {

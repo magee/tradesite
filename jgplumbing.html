@@ -48,6 +48,31 @@
             <h2>{{pageTitle}}</h2>
         </div>
     </div>
+    {{yield 'pageContent'}}
+</template>
+
+<template name="aboutContent">
+    <div class="row">
+        <div class="col-md-12">
+            About JGP
+        </div>
+    </div>
+</template>
+
+<template name="servicesContent">
+    <div class="row">
+        <div class="col-md-12">
+            About JGP
+        </div>
+    </div>
+</template>
+
+<template name="contactContent">
+    <div class="row">
+        <div class="col-md-12">
+            About JGP
+        </div>
+    </div>
 </template>
 
 <template name="support">
@@ -57,14 +82,6 @@
     </style>
     <iframe class="freshwidget-embedded-form" id="freshwidget-embedded-form" src="http://jgp.freshdesk.com/widgets/feedback_widget/new?&widgetType=embedded&screenshot=no&searchArea=no" scrolling="no" height="500px" width="100%" frameborder="0" >
     </iframe>
-</template>
-
-<template name="contact">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Contact Us</h1>
-        </div>
-    </div>
 </template>
 
 <template name="navbar">
@@ -100,14 +117,6 @@
         </div>
         <!-- /.container -->
     </nav>
-</template>
-
-<template name="services">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Our Services</h1>
-        </div>
-    </div>
 </template>
 
 <template name="home">
