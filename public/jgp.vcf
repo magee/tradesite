@@ -1,0 +1,21 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.9.2//EN
+N:;;;;
+FN:John Gleason Plumbing & Sewage
+ORG:John Gleason Plumbing & Sewage;
+EMAIL;type=INTERNET;type=WORK;type=pref:jgpplumbman@yahoo.com
+item1.TEL;type=pref:(415) 388-2800
+item1.X-ABLabel:South Marin
+item2.TEL:(415) 388-2800
+item2.X-ABLabel:Marin
+item3.TEL:(707) 765-3350
+item3.X-ABLabel:Sonoma
+TEL;type=WORK;type=FAX:(415) 898-1001
+ADR;type=WORK;type=pref:;;27 Pamaron Way;Novato;CA;94949;
+item4.URL;type=pref:http://www.johngleasonplumbing.com
+item4.X-ABLabel:_$!<HomePage>!$_
+X-ABShowAs:COMPANY
+UID:c98f089c-130a-4b57-a15a-2165de7f325f
+X-ABUID:C98F089C-130A-4B57-A15A-2165DE7F325F:ABPerson
+END:VCARD
