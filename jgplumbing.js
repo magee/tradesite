@@ -82,13 +82,7 @@ Router.map(function () {
   });
 
   this.route('contact', {
-    path: '/contact',
-    pageTitle: "Contact Us",
-    yieldTemplates: {
-      'contactContent':   {to: 'content'},
-      'footer': {to: 'footer'},
-      'navbar': {to: 'navbar'}
-    }
+    controller: 'ContactController'
   });
 
   this.route('notFound', {
