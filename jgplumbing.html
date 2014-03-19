@@ -25,12 +25,13 @@
 </template>
 
 <template name="pageTitle">
-    {{#if pageTitle}}
     <div class="row">
         <div class="col-md-12">
             <h2>{{pageTitle}}</h2>
         </div>
     </div>
+    {{#if pageTitle}}
+        <!-- pageTitle conditional executed -->
     {{/if}}
 </template>
 
