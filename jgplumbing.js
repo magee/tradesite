@@ -63,7 +63,9 @@ Router.map(function () {
 
   this.route('about', {
     path: '/about',
-    pageTitle: "About Us",
+    data: {
+      pageTitle: "About Us"
+    },
     yieldTemplates: {
       'aboutContent':   {to: 'content'},
       'footer': {to: 'footer'},
@@ -84,7 +86,7 @@ Router.map(function () {
   });
 
   this.route('contact', {
-    controller: 'ContactController',
+    controller: ContactController,
     path: '/contact'
   });
 
