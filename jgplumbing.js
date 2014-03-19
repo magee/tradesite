@@ -24,7 +24,7 @@ Router.map(function () {
     path: '/',
     template: 'homeLayout',
     yieldTemplates: {
-      'home': {to: pageContent}
+      'home': {to: 'content'}
     }
   });
 
@@ -32,7 +32,7 @@ Router.map(function () {
     path: '/about',
     pageTitle: "About Us",
     yieldTemplates: {
-      'aboutContent': {to: 'pageContent'}
+      'aboutContent': {to: 'content'}
     }
   });
 
@@ -40,7 +40,7 @@ Router.map(function () {
     path: '/services',
     pageTitle: "Our Services",
     yieldTemplates: {
-      'servicesContent': {to: 'pageContent'}
+      'servicesContent': {to: 'content'}
     }
   });
 
@@ -48,7 +48,7 @@ Router.map(function () {
     path: '/contact',
     pageTitle: "Contact Us",
     yieldTemplates: {
-      'contactContent': {to: 'pageContent'}
+      'contactContent': {to: 'content'}
     }
   });
 
