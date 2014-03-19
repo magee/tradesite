@@ -5,6 +5,28 @@ if (Meteor.isServer) {
   Meteor.startup(function () {
     // code to run on server at startup
   });
+
+  var fs = Meteor.require('fs');
+
+  Router.map(function() {
+    return this.route('dataFile', {
+      where: 'server',
+      path: '/vcf/jgp.vcf',
+      action: function() {
+        var file = fs.readFileSync('jgp.vcf');
+        var filename = 'jgp.vcf';
+
+        var headers = {
+          'Content-type': 'text/vcard',
+          'Content-Disposition': "attachment; filename=" + filename
+        };
+
+        this.response.writeHead(200, headers);
+        return this.response.end(file);
+      }
+    });
+  });
+
 }
 
 Router.configure({
@@ -26,27 +48,6 @@ Router.configure({
 //        'Content-Disposition': "attachment; filename=" + this.request.query.name
 //     }, fs.readFileSync( uploadPath + this.request.query.name )];
 // } );
-
-var fs = Meteor.require('fs');
-
-Router.map(function() {
-  return this.route('dataFile', {
-    where: 'server',
-    path: '/vcf/jgp.vcf',
-    action: function() {
-      var file = fs.readFileSync('jgp.vcf');
-      var filename = 'jgp.vcf';
-
-      var headers = {
-        'Content-type': 'text/vcard',
-        'Content-Disposition': "attachment; filename=" + filename
-      };
-
-      this.response.writeHead(200, headers);
-      return this.response.end(file);
-    }
-  });
-});
 
 Router.map(function () {
   this.route('home', {
