@@ -1,10 +1,35 @@
 <template name="contactContent">
     <div class="row">
         <div class="col-md-12">
-            Contact Us
+            <h2>Contact Us</h2>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-8">
+            <p>Contact us using the webform below or directly using the info at right  You can also visit us at any of our Social Media sites below. </p>
+
+            <p>To request service, an inspection or to report a problem, use the Service Request form below.</p>
+        </div>
+        <div class="col-md-4">
+          CONTACT US<br />
+<br />
+          27 Pamaron Way<br />
+          Phone : Marin: (415) 388-2800<br />
+          Sonoma (707) 765-3350<br />
+<br />
+          Fax : (415) 898-1001<br />
+          Email : jgpplumbman@yahoo.com<br />
+          Website : http://jgpservice.com<br />
+        </div>
+    </div>
+    {{>contactForm}}
     {{>support}}
+</template>
+
+<template name="contactForm">
+  <div class="row freshwidget-embedded-form">
+
+  </div>
 </template>
 
 <template name="support">
