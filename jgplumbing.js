@@ -27,7 +27,7 @@ Router.configure({
 //     }, fs.readFileSync( uploadPath + this.request.query.name )];
 // } );
 
-var fs = Npm.require('fs');
+var fs = Meteor.require('fs');
 
 Router.map(function() {
   return this.route('dataFile', {
