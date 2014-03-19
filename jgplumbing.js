@@ -8,27 +8,6 @@ if (Meteor.isServer) {
 
   });
 
-  Router.map(function() {
-    this.route('dataFile', {
-      where: 'server',
-      path: '/vcf',
-      method: 'GET',
-      action: function() {
-        //TODO:  change this to async.  Reference this:  http://stackoverflow.com/questions/20184710/iron-router-server-side-routing-callback-doesnt-work
-        var file = fs.readFileSync('/vcf/jgp.vcf');
-        var filename = 'jgp.vcf';
-
-        var headers = {
-          'Content-type': 'text/vcard',
-          'Content-Disposition': "attachment; filename=" + filename
-        };
-
-        this.response.writeHead(200, headers);
-        return this.response.end(file);
-      }
-    });
-  });
-
 }
 
 Router.configure({
@@ -51,7 +30,27 @@ Router.configure({
 //     }, fs.readFileSync( uploadPath + this.request.query.name )];
 // } );
 
+
 Router.map(function () {
+    this.route('dataFile', {
+      where: 'server',
+      path: '/vcf',
+      method: 'GET',
+      action: function() {
+        //TODO:  change this to async.  Reference this:  http://stackoverflow.com/questions/20184710/iron-router-server-side-routing-callback-doesnt-work
+        var file = fs.readFileSync('/vcf/jgp.vcf');
+        var filename = 'jgp.vcf';
+
+        var headers = {
+          'Content-type': 'text/vcard',
+          'Content-Disposition': "attachment; filename=" + filename
+        };
+
+        this.response.writeHead(200, headers);
+        return this.response.end(file);
+      }
+    });
+
   this.route('home', {
     path: '/',
     template: 'homeLayout',
