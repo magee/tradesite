@@ -4,16 +4,18 @@ if (Meteor.isClient) {
 if (Meteor.isServer) {
   Meteor.startup(function () {
     // code to run on server at startup
+    var fs = Npm.require('fs');
+
   });
 
-  var fs = Npm.require('fs');
-
   Router.map(function() {
-    return this.route('dataFile', {
+    this.route('dataFile', {
       where: 'server',
-      path: '/vcf/jgp.vcf',
+      path: '/vcf',
+      method: 'GET',
       action: function() {
-        var file = fs.readFileSync('jgp.vcf');
+        //TODO:  change this to async.  Reference this:  http://stackoverflow.com/questions/20184710/iron-router-server-side-routing-callback-doesnt-work
+        var file = fs.readFileSync('/vcf/jgp.vcf');
         var filename = 'jgp.vcf';
 
         var headers = {
