@@ -54,7 +54,7 @@ Router.map(function () {
     path: '/contact',
     pageTitle: "Contact Us",
     yieldTemplates: {
-      'contentContent':   {to: 'content'},
+      'contactContent':   {to: 'content'},
       'footer': {to: 'footer'},
       'navbar': {to: 'navbar'}
     }
