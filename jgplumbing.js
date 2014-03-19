@@ -37,6 +37,7 @@ Router.map(function () {
       'aboutContent':   {to: 'content'},
       'footer': {to: 'footer'},
       'navbar': {to: 'navbar'}
+    }
   });
 
   this.route('services', {
