@@ -22,12 +22,14 @@ Router.configure({
 Router.map(function () {
   this.route('home', {
     path: '/',
-    template: 'home'
+    template: 'homeLayout',
+    yieldTemplates: {
+      'home': {to: pageContent}
+    }
   });
 
   this.route('about', {
     path: '/about',
-    template: 'pageLayout',
     pageTitle: "About Us",
     yieldTemplates: {
       'aboutContent': {to: 'pageContent'}
@@ -36,7 +38,6 @@ Router.map(function () {
 
   this.route('services', {
     path: '/services',
-    template: 'pageLayout',
     pageTitle: "Our Services",
     yieldTemplates: {
       'servicesContent': {to: 'pageContent'}
@@ -45,7 +46,6 @@ Router.map(function () {
 
   this.route('contact', {
     path: '/contact',
-    template: 'pageLayout',
     pageTitle: "Contact Us",
     yieldTemplates: {
       'contactContent': {to: 'pageContent'}

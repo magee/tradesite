@@ -7,15 +7,15 @@
   <title>John Gleason Plumbing</title>
 </head>
 
-<template name="layout">
+<template name="homeLayout">
     {{yield 'navbar'}}
     <div class="container">
-        {{yield}}
+        {{yield 'pageContent'}}
         {{yield 'footer'}}
     </div>
 </template>
 
-<template name="pageLayout">
+<template name="layout">
     {{yield 'navbar'}}
     <div class="row">
         <div class="col-md-12">
